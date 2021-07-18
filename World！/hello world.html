@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Cross-domain Discriminative Subspace Learning | Yutong的个人站</title>
+  <title>开站随笔：Hello World！ | Yutong的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="为解决电子鼻数据的漂移补偿问题，本文拟利用子空间学习的方法，寻找一个源域数据与目标域数据$\boldsymbol{X}$可以共同投影到的子空间$\boldsymbol{Y}$，并利用这一子空间变换$\boldsymbol{P}$，对两组数据进行降维，得到投影到子空间的源域数据和目标域数据。该子空间的求解满足三点条件：  满足域内差异最小化 满足类内散度最小化和类间散度最大化 满足信息不失真">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Cross-domain Discriminative Subspace Learning">
-<meta property="og:url" content="http://example.com/2021/07/18/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%EF%BC%9ACross-domain%20Discriminative%20Subspace%20Learning/index.html">
+  <meta name="description" content="​        非常开心，在克服了一大堆bug和不可知问题后，自己一直想做的个人网站终于建起来了。从本科毕业旅行回来以后就一直在谋划，希望能找一个能够写文档的地方，记录一下平时自己读文献，写论文，搞小项目，开脑洞的过程。这次用Hexo在Github上“白嫖”服务器，中间经历了改文章的拖延，代理梯子的莫名崩溃，和Gitee Pages停止服务，最后将repo地址改为SSH，终于是暂时解决了问题。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="开站随笔：Hello World！">
+<meta property="og:url" content="http://example.com/World%EF%BC%81/hello%20world.html">
 <meta property="og:site_name" content="Yutong的个人站">
-<meta property="og:description" content="为解决电子鼻数据的漂移补偿问题，本文拟利用子空间学习的方法，寻找一个源域数据与目标域数据$\boldsymbol{X}$可以共同投影到的子空间$\boldsymbol{Y}$，并利用这一子空间变换$\boldsymbol{P}$，对两组数据进行降维，得到投影到子空间的源域数据和目标域数据。该子空间的求解满足三点条件：  满足域内差异最小化 满足类内散度最小化和类间散度最大化 满足信息不失真">
+<meta property="og:description" content="​        非常开心，在克服了一大堆bug和不可知问题后，自己一直想做的个人网站终于建起来了。从本科毕业旅行回来以后就一直在谋划，希望能找一个能够写文档的地方，记录一下平时自己读文献，写论文，搞小项目，开脑洞的过程。这次用Hexo在Github上“白嫖”服务器，中间经历了改文章的拖延，代理梯子的莫名崩溃，和Gitee Pages停止服务，最后将repo地址改为SSH，终于是暂时解决了问题。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-07-18T01:22:47.000Z">
-<meta property="article:modified_time" content="2021-07-18T09:27:19.817Z">
+<meta property="article:published_time" content="2021-07-18T15:38:49.000Z">
+<meta property="article:modified_time" content="2021-07-18T15:39:44.378Z">
 <meta property="article:author" content="TianYutong">
 <meta name="twitter:card" content="summary">
   
@@ -156,75 +156,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-论文精读：Cross-domain Discriminative Subspace Learning" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Cross-domain Discriminative Subspace Learning
+      开站随笔：Hello World！
     </h1>
   
 
         
-        <a href="/2021/07/18/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%EF%BC%9ACross-domain%20Discriminative%20Subspace%20Learning/" class="archive-article-date">
-  	<time datetime="2021-07-18T01:22:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-18</time>
+        <a href="/World%EF%BC%81/hello%20world.html" class="archive-article-date">
+  	<time datetime="2021-07-18T15:38:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>为解决电子鼻数据的漂移补偿问题，本文拟利用子空间学习的方法，寻找一个源域数据与目标域数据$\boldsymbol{X}$可以共同投影到的子空间$\boldsymbol{Y}$，并利用这一子空间变换$\boldsymbol{P}$，对两组数据进行<strong>降维</strong>，得到投影到子空间的源域数据和目标域数据。该子空间的求解满足三点条件：</p>
-<ul>
-<li>满足域内差异最小化</li>
-<li>满足类内散度最小化和类间散度最大化</li>
-<li>满足信息不失真  </li>
-</ul>
-<span id="more"></span>
-<p>对于条件(1)，为准确描述域内特征维度差异，文章提出了<strong>对minibatch的差异进行描述的特征特定域距离（MPD）算法</strong>，在MDD算法的基础上，对每个minibatch的距离施加权重$w_i$，改进得到MPD算法。其描述公式如下：</p>
-<script type="math/tex; mode=display">
-\min{\sum^{M}_{i=1}{w_i
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}
-\end{Vmatrix}^2_2
-}}</script><p>其中，$w_i$由下式计算</p>
-<script type="math/tex; mode=display">
-w_i=\frac{\sum^{M}_{j=1}{
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{T}
-\end{Vmatrix}^2_2
-}/{
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{T}
-\end{Vmatrix}^2_2
-}}{\sum^{M}_{k=1}\sum^{M}_{j=1}{
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{T}
-\end{Vmatrix}^2_2
-}/{
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{k}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{k}_\boldsymbol{T}
-\end{Vmatrix}^2_2
-}}</script><p>$\mathbf{u}$为未投影数据的中心<br>$\boldsymbol{\mu}$为投影后数据的中心<br>每一个minibatch的权值可以描述为中心点之间的距离<br>要求<strong>当其源域与目标域分布差异越小，权值越大。</strong><br>该差异由均值中心点描述</p>
-<p>对于条件(2)，为保证数据分散性，即同类数据聚集，异类数据分散，本文设置类间散度矩阵$\boldsymbol{S^S_b}$和类内散度矩阵$\boldsymbol{S^S_w}$的迹作为平均测度，使得类间距离最大化，类内距离最小化,如下式所示：</p>
-<script type="math/tex; mode=display">
-\max_\boldsymbol{P}\frac{Tr(\boldsymbol{S^S_b})}{Tr(\boldsymbol{S^S_w})}=\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^TS^S_bP})}{Tr(\boldsymbol{P^TS^S_wP})}</script><p>对于条件(3)，为保证数据信息损失最小，本文要求子空间中目标域数据方差达到最大，求解公式如下：</p>
-<script type="math/tex; mode=display">
-\max_\boldsymbol{P}Tr((\boldsymbol{P^TX_T})(\boldsymbol{P^TX_T})^T)=\max_\boldsymbol{P}Tr(\boldsymbol{P^TX_T}\boldsymbol{X_T^TP})</script><p>根据以上三个条件，构建约束方程如下：</p>
-<script type="math/tex; mode=display">
-\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^TS^S_bP})+\lambda_0·Tr(\boldsymbol{P^TX_T}\boldsymbol{X_T^TP})}{Tr(\boldsymbol{P^TS^S_wP})+\lambda_1·{\sum^{M}_{i=1}{w_i
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}
-\end{Vmatrix}^2_2
-}}}=\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^T(S^S_b+\lambda_0·\boldsymbol{X}_T\boldsymbol{X}_T^T)P})}{Tr(\boldsymbol{P}^T(S^S_w+\lambda_1·{\sum^{M}_{i=1}{w_i
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}
-\end{Vmatrix}^2_2
-}})\boldsymbol{P})}</script><p>令$S^S_b+\lambda_0·\boldsymbol{X}_T\boldsymbol{X}_T^T$为$\mathbf{R}$,令$\boldsymbol{P}^T(S^S_w+\lambda_1·{\sum^{M}_{i=1}{w_i<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}<br>\end{Vmatrix}^2_2<br>}})\boldsymbol{P}$为$\mathbf{Q}$,根据矩阵运算，应对以上矩阵分式求迹，所以应当对矩阵分式进行分析。本文的目的是求转换矩阵$\mathbf{P}$，若对以上矩阵分式进行变换，等效于：</p>
-<script type="math/tex; mode=display">
-\boldsymbol{Q^{-1}RP}=\rho \boldsymbol{P}</script><p>也就是将求解$\boldsymbol{P}$的问题转化为求解特征值和特征向量组$\boldsymbol{P}$的问题，最终得到降维后的源域数据和目标域数据。</p>
+        <p>​        非常开心，在克服了一大堆bug和不可知问题后，自己一直想做的个人网站终于建起来了。从本科毕业旅行回来以后就一直在谋划，希望能找一个能够写文档的地方，记录一下平时自己读文献，写论文，搞小项目，开脑洞的过程。这次用Hexo在Github上“白嫖”服务器，中间经历了<strong>改文章的拖延</strong>，<strong>代理梯子</strong>的莫名崩溃，和<strong>Gitee Pages停止服务</strong>，最后将repo地址改为SSH，终于是暂时解决了问题。</p>
+<p>​        建立网站的初衷是想记录一下自己平时的学习笔记记录呀，项目、论文的构思和思考，也想和大家一起分享平时搞小创新的一些想法和随笔。找了好多平台，比如CSDN，知乎，简书，等等，但是这些平台广告都太多了，加上各种条条框框也太麻烦，所以还是想搞一个能够真正意义上自己独立运营的平台，最后选择自己建立一个个人网页。</p>
+<p>​        从大一开始搞IT，到现在时间没有很长，而且养的很多专业习惯一直不是特别好，加上平时做的东西也都是基于一些已有的平台，真正从头做到尾的项目做的还是相对少一些。也希望这一次能把自己平时做的东西都能有一个记录，也是督促自己好好学习，天天向上，争取研究生毕业能自己独立搞完一个项目，成为一个真正懂行的Geek。</p>
+<p>​        <strong>希望自己这次不要半途而废噶！:cry:</strong></p>
+<p>​        Hint: 因为money的问题，一直没有找到合适的域名，所以伺机看看阿里云那里的域名便宜了就赶紧入手，下一步考虑树莓派or自己设计一个Linux的小电脑，搞成一个web服务器，把网站挂载上去，这样就能从头到尾自己维护了！（前提是不烦懒癌 ✌）</p>
 
       
 
@@ -234,17 +190,6 @@ w_i=\frac{\sum^{M}_{j=1}{
       
       
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/论文精读//" class="article-tag-list-link color5">论文精读</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -294,7 +239,7 @@ w_i=\frac{\sum^{M}_{j=1}{
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/07/18/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%EF%BC%9ACross-domain%20Discriminative%20Subspace%20Learning/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/World%EF%BC%81/hello%20world.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -369,7 +314,7 @@ w_i=\frac{\sum^{M}_{j=1}{
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
