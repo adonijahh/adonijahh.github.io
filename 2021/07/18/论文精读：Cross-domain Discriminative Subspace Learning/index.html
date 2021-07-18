@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>论文精读：Cross-domain Discriminative Subspace Learning | Yutong的个人站</title>
+  <title>Cross-domain Discriminative Subspace Learning | Yutong的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="为解决电子鼻数据的漂移补偿问题，本文拟利用子空间学习的方法，寻找一个源域数据与目标域数据$\boldsymbol{X}$可以共同投影到的子空间$\boldsymbol{Y}$，并利用这一子空间变换$\boldsymbol{P}$，对两组数据进行降维，得到投影到子空间的源域数据和目标域数据。该子空间的求解满足三点条件：  满足域内差异最小化 满足类内散度最小化和类间散度最大化 满足信息不失真">
 <meta property="og:type" content="article">
-<meta property="og:title" content="论文精读：Cross-domain Discriminative Subspace Learning">
+<meta property="og:title" content="Cross-domain Discriminative Subspace Learning">
 <meta property="og:url" content="http://example.com/2021/07/18/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%EF%BC%9ACross-domain%20Discriminative%20Subspace%20Learning/index.html">
 <meta property="og:site_name" content="Yutong的个人站">
 <meta property="og:description" content="为解决电子鼻数据的漂移补偿问题，本文拟利用子空间学习的方法，寻找一个源域数据与目标域数据$\boldsymbol{X}$可以共同投影到的子空间$\boldsymbol{Y}$，并利用这一子空间变换$\boldsymbol{P}$，对两组数据进行降维，得到投影到子空间的源域数据和目标域数据。该子空间的求解满足三点条件：  满足域内差异最小化 满足类内散度最小化和类间散度最大化 满足信息不失真">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-07-18T01:22:47.000Z">
-<meta property="article:modified_time" content="2021-07-18T08:59:14.699Z">
+<meta property="article:modified_time" content="2021-07-18T09:27:19.817Z">
 <meta property="article:author" content="TianYutong">
 <meta name="twitter:card" content="summary">
   
@@ -47,21 +47,23 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="me.png" class="js-avatar">
+			<img src="/me.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Yutong的个人站</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">好风凭借力，送我上青云。</p>
+		<p class="header-subtitle">“好风凭借力，送我上青云。”</p>
 		
 
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/*">主页</a></li>
+				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/archives">目录</a></li>
+	        
+				<li><a href="/me">关于我</a></li>
 	        
 			</ul>
 		</nav>
@@ -69,14 +71,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -113,9 +107,11 @@
 			  <h1 class="header-author js-header-author">Yutong的个人站</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>好风凭借力，送我上青云。<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>“好风凭借力，送我上青云。”<i class="icon icon-quo-right"></i></p>
 			
 			
+			
+				
 			
 				
 			
@@ -138,12 +134,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/*">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/archives">目录</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/me">关于我</a></li>
 		        
 				</ul>
 			</nav>
@@ -165,7 +163,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      论文精读：Cross-domain Discriminative Subspace Learning
+      Cross-domain Discriminative Subspace Learning
     </h1>
   
 
@@ -184,6 +182,7 @@
 <li>满足类内散度最小化和类间散度最大化</li>
 <li>满足信息不失真  </li>
 </ul>
+<span id="more"></span>
 <p>对于条件(1)，为准确描述域内特征维度差异，文章提出了<strong>对minibatch的差异进行描述的特征特定域距离（MPD）算法</strong>，在MDD算法的基础上，对每个minibatch的距离施加权重$w_i$，改进得到MPD算法。其描述公式如下：</p>
 <script type="math/tex; mode=display">
 \min{\sum^{M}_{i=1}{w_i
@@ -230,32 +229,22 @@ w_i=\frac{\sum^{M}_{j=1}{
       
 
       
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
     </div>
     <div class="article-info article-info-index">
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/论文精读//" class="article-tag-list-link color5">论文精读</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -330,6 +319,19 @@ w_i=\frac{\sum^{M}_{j=1}{
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -415,29 +417,13 @@ MathJax.Hub.Queue(function() {
       
       
     
-      
-      
-      
-    
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
     </ul>
@@ -501,45 +487,7 @@ MathJax.Hub.Queue(function() {
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
-  	  	
-    	</section>
     
   </div>
   
