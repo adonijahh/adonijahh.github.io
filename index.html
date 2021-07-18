@@ -163,7 +163,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/18/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%EF%BC%9ACross-domain%20Discriminative%20Subspace%20Learning/">20210718_note_paper</a>
+      <a class="article-title" href="/2021/07/18/%E8%AE%BA%E6%96%87%E7%B2%BE%E8%AF%BB%EF%BC%9ACross-domain%20Discriminative%20Subspace%20Learning/">论文精读：Cross-domain Discriminative Subspace Learning</a>
     </h1>
   
 
@@ -182,48 +182,10 @@
 <li>满足类内散度最小化和类间散度最大化</li>
 <li>满足信息不失真  </li>
 </ul>
-<p>对于条件(1)，为准确描述域内特征维度差异，文章提出了<strong>对minibatch的差异进行描述的特征特定域距离（MPD）算法</strong>，在MDD算法的基础上，对每个minibatch的距离施加权重$w_i$，改进得到MPD算法。其描述公式如下：</p>
-<script type="math/tex; mode=display">
-\min{\sum^{M}_{i=1}{w_i
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}
-\end{Vmatrix}^2_2
-}}</script><p>其中，$w_i$由下式计算</p>
-<script type="math/tex; mode=display">
-w_i=\frac{\sum^{M}_{j=1}{
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{T}
-\end{Vmatrix}^2_2
-}/{
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{T}
-\end{Vmatrix}^2_2
-}}{\sum^{M}_{k=1}\sum^{M}_{j=1}{
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{T}
-\end{Vmatrix}^2_2
-}/{
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{k}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{k}_\boldsymbol{T}
-\end{Vmatrix}^2_2
-}}</script><p>$\mathbf{u}$为未投影数据的中心<br>$\boldsymbol{\mu}$为投影后数据的中心<br>每一个minibatch的权值可以描述为中心点之间的距离<br>要求<strong>当其源域与目标域分布差异越小，权值越大。</strong><br>该差异由均值中心点描述</p>
-<p>对于条件(2)，为保证数据分散性，即同类数据聚集，异类数据分散，本文设置类间散度矩阵$\boldsymbol{S^S_b}$和类内散度矩阵$\boldsymbol{S^S_w}$的迹作为平均测度，使得类间距离最大化，类内距离最小化,如下式所示：</p>
-<script type="math/tex; mode=display">
-\max_\boldsymbol{P}\frac{Tr(\boldsymbol{S^S_b})}{Tr(\boldsymbol{S^S_w})}=\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^TS^S_bP})}{Tr(\boldsymbol{P^TS^S_wP})}</script><p>对于条件(3)，为保证数据信息损失最小，本文要求子空间中目标域数据方差达到最大，求解公式如下：</p>
-<script type="math/tex; mode=display">
-\max_\boldsymbol{P}Tr((\boldsymbol{P^TX_T})(\boldsymbol{P^TX_T})^T)=\max_\boldsymbol{P}Tr(\boldsymbol{P^TX_T}\boldsymbol{X_T^TP})</script><p>根据以上三个条件，构建约束方程如下：</p>
-<script type="math/tex; mode=display">
-\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^TS^S_bP})+\lambda_0·Tr(\boldsymbol{P^TX_T}\boldsymbol{X_T^TP})}{Tr(\boldsymbol{P^TS^S_wP})+\lambda_1·{\sum^{M}_{i=1}{w_i
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}
-\end{Vmatrix}^2_2
-}}}=\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^T(S^S_b+\lambda_0·\boldsymbol{X}_T\boldsymbol{X}_T^T)P})}{Tr(\boldsymbol{P}^T(S^S_w+\lambda_1·{\sum^{M}_{i=1}{w_i
-\begin{Vmatrix}
-    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}
-\end{Vmatrix}^2_2
-}})\boldsymbol{P})}</script><p>令$S^S_b+\lambda_0·\boldsymbol{X}_T\boldsymbol{X}_T^T$为$\mathbf{R}$,令$\boldsymbol{P}^T(S^S_w+\lambda_1·{\sum^{M}_{i=1}{w_i<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}<br>\end{Vmatrix}^2_2<br>}})\boldsymbol{P}$为$\mathbf{Q}$,根据矩阵运算，应对以上矩阵分式求迹，所以应当对矩阵分式进行分析。本文的目的是求转换矩阵$\mathbf{P}$，若对以上矩阵分式进行变换，等效于：</p>
-<script type="math/tex; mode=display">
-\boldsymbol{Q^{-1}RP}=\rho \boldsymbol{P}</script><p>也就是将求解$\boldsymbol{P}$的问题转化为求解特征值和特征向量组$\boldsymbol{P}$的问题，最终得到降维后的源域数据和目标域数据。</p>
+<p>对于条件(1)，为准确描述域内特征维度差异，文章提出了<strong>对minibatch的差异进行描述的特征特定域距离（MPD）算法</strong>，在MDD算法的基础上，对每个minibatch的距离施加权重$w_i$，改进得到MPD算法。其描述公式如下：<br>$$<br>\min{\sum^{M}_{i=1}{w_i<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}<em>\boldsymbol{S}<br>\end{Vmatrix}^2_2<br>}}<br>$$<br>其中，$w_i$由下式计算<br>$$<br>w_i=\frac{\sum^{M}</em>{j=1}{<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{T}<br>\end{Vmatrix}^2_2<br>}/{<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{i}<em>\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}<em>\boldsymbol{T}<br>\end{Vmatrix}^2_2<br>}}{\sum^{M}</em>{k=1}\sum^{M}</em>{j=1}{<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{j}_\boldsymbol{T}<br>\end{Vmatrix}^2_2<br>}/{<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{k}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{k}_\boldsymbol{T}<br>\end{Vmatrix}^2_2<br>}}<br>$$<br>$\mathbf{u}$为未投影数据的中心<br>$\boldsymbol{\mu}$为投影后数据的中心<br>每一个minibatch的权值可以描述为中心点之间的距离<br>要求<strong>当其源域与目标域分布差异越小，权值越大。</strong><br>该差异由均值中心点描述</p>
+<p>对于条件(2)，为保证数据分散性，即同类数据聚集，异类数据分散，本文设置类间散度矩阵$\boldsymbol{S^S_b}$和类内散度矩阵$\boldsymbol{S^S_w}$的迹作为平均测度，使得类间距离最大化，类内距离最小化,如下式所示：<br>$$<br>\max_\boldsymbol{P}\frac{Tr(\boldsymbol{S^S_b})}{Tr(\boldsymbol{S^S_w})}=\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^TS^S_bP})}{Tr(\boldsymbol{P^TS^S_wP})}<br>$$</p>
+<p>对于条件(3)，为保证数据信息损失最小，本文要求子空间中目标域数据方差达到最大，求解公式如下：<br>$$<br>\max_\boldsymbol{P}Tr((\boldsymbol{P^TX_T})(\boldsymbol{P^TX_T})^T)=\max_\boldsymbol{P}Tr(\boldsymbol{P^TX_T}\boldsymbol{X_T^TP})<br>$$</p>
+<p>根据以上三个条件，构建约束方程如下：<br>$$<br>\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^TS^S_bP})+\lambda_0·Tr(\boldsymbol{P^TX_T}\boldsymbol{X_T^TP})}{Tr(\boldsymbol{P^TS^S_wP})+\lambda_1·{\sum^{M}_{i=1}{w_i<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}<br>\end{Vmatrix}^2_2<br>}}}=\max_\boldsymbol{P}\frac{Tr(\boldsymbol{P^T(S^S_b+\lambda_0·\boldsymbol{X}_T\boldsymbol{X}<em>T^T)P})}{Tr(\boldsymbol{P}^T(S^S_w+\lambda_1·{\sum^{M}</em>{i=1}{w_i<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}<br>\end{Vmatrix}^2_2<br>}})\boldsymbol{P})}<br>$$<br>令$S^S_b+\lambda_0·\boldsymbol{X}_T\boldsymbol{X}<em>T^T$为$\mathbf{R}$,令$\boldsymbol{P}^T(S^S_w+\lambda_1·{\sum^{M}</em>{i=1}{w_i<br>\begin{Vmatrix}<br>    \boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}-\boldsymbol{\mu}^\boldsymbol{i}_\boldsymbol{S}<br>\end{Vmatrix}^2_2<br>}})\boldsymbol{P}$为$\mathbf{Q}$,根据矩阵运算，应对以上矩阵分式求迹，所以应当对矩阵分式进行分析。本文的目的是求转换矩阵$\mathbf{P}$，若对以上矩阵分式进行变换，等效于：<br>$$<br>\boldsymbol{Q^{-1}RP}=\rho \boldsymbol{P}<br>$$<br>也就是将求解$\boldsymbol{P}$的问题转化为求解特征值和特征向量组$\boldsymbol{P}$的问题，最终得到降维后的源域数据和目标域数据。</p>
 
       
 
