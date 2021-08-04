@@ -6,25 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>大一团伙自制DIY四旋翼无人机 | Yutong的个人站</title>
+  <title>论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation | Yutong的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="大一团伙自制DIY四旋翼无人机 今天在电脑里翻翻翻，发现一个老旧的带制作。 大一下学期跟前任导师团队合伙做的一个四旋翼无人机，做成以后拿去比赛也没获奖，导师搬楼的时候直接送给我了，然而自那以后再也没动过这台机子，放在宿舍柜子顶上积灰，毕业最终也搞忘带走，丢掉了。&#x3D; &#x3D; 当年的材料文件还在电脑里存着，有想学习的朋友可以私聊我微信啥的发给大家。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大一团伙自制DIY四旋翼无人机">
-<meta property="og:url" content="http://example.com/World%EF%BC%81/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA.html">
+  <meta name="description" content="论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation这篇文章是计算机视觉和迁移学习交叉的领域自适应算法研究，来自重庆大学张磊教授团队。文章提出的标签解绑思想非常新颖，认为迁移学习的无监督问题，源域数据本身不仅包含自身的数据信息，也包含标签信息，以“分治”的思想，将标签信息的迁移也考虑进来，把数据中包含的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation">
+<meta property="og:url" content="http://example.com/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/index.html">
 <meta property="og:site_name" content="Yutong的个人站">
-<meta property="og:description" content="大一团伙自制DIY四旋翼无人机 今天在电脑里翻翻翻，发现一个老旧的带制作。 大一下学期跟前任导师团队合伙做的一个四旋翼无人机，做成以后拿去比赛也没获奖，导师搬楼的时候直接送给我了，然而自那以后再也没动过这台机子，放在宿舍柜子顶上积灰，毕业最终也搞忘带走，丢掉了。&#x3D; &#x3D; 当年的材料文件还在电脑里存着，有想学习的朋友可以私聊我微信啥的发给大家。">
+<meta property="og:description" content="论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation这篇文章是计算机视觉和迁移学习交叉的领域自适应算法研究，来自重庆大学张磊教授团队。文章提出的标签解绑思想非常新颖，认为迁移学习的无监督问题，源域数据本身不仅包含自身的数据信息，也包含标签信息，以“分治”的思想，将标签信息的迁移也考虑进来，把数据中包含的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/World%EF%BC%81/Co/飞行器/照片/二号-卷轴-航拍-云台-FPV.jpg">
-<meta property="og:image" content="http://example.com/World%EF%BC%81/Co/飞行器/照片/IMG_1528.JPG">
-<meta property="og:image" content="http://example.com/World%EF%BC%81/Co/飞行器/照片/IMG_1537.JPG">
-<meta property="og:image" content="http://example.com/World%EF%BC%81/Co/飞行器/照片/IMG_1571.JPG">
-<meta property="og:image" content="http://example.com/World%EF%BC%81/Co/飞行器/照片/IMG_1562.JPG">
-<meta property="article:published_time" content="2021-07-31T14:00:00.000Z">
-<meta property="article:modified_time" content="2021-07-31T13:15:39.914Z">
+<meta property="og:image" content="http://example.com/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/image-20210803162152488.png">
+<meta property="og:image" content="http://example.com/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/image-20210803163133177.png">
+<meta property="article:published_time" content="2021-08-04T12:00:00.000Z">
+<meta property="article:modified_time" content="2021-08-04T12:51:25.598Z">
 <meta property="article:author" content="TianYutong">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/World%EF%BC%81/Co/飞行器/照片/二号-卷轴-航拍-云台-FPV.jpg">
+<meta name="twitter:image" content="http://example.com/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/image-20210803162152488.png">
   
     <link rel="alternative" href="/atom.xml" title="Yutong的个人站" type="application/atom+xml">
   
@@ -164,14 +161,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      大一团伙自制DIY四旋翼无人机
+      论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation
     </h1>
   
 
@@ -182,23 +179,118 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/World%EF%BC%81/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA.html" class="archive-article-date">
-  	<time datetime="2021-07-31T14:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-31</time>
+<a href="/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/" class="archive-article-date">
+  	<time datetime="2021-08-04T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="大一团伙自制DIY四旋翼无人机"><a href="#大一团伙自制DIY四旋翼无人机" class="headerlink" title="大一团伙自制DIY四旋翼无人机"></a>大一团伙自制DIY四旋翼无人机</h1><blockquote>
-<p>今天在电脑里翻翻翻，发现一个老旧的带制作。</p>
-<p>大一下学期跟前任导师团队合伙做的一个四旋翼无人机，做成以后拿去比赛也没获奖，导师搬楼的时候直接送给我了，然而自那以后再也没动过这台机子，放在宿舍柜子顶上积灰，毕业最终也搞忘带走，丢掉了。= =</p>
-<p>当年的材料文件还在电脑里存着，有想学习的朋友可以私聊我微信啥的发给大家。</p>
+        <h1 id="论文阅读：Label-Disentangled-Analysis-for-unsupervised-visual-domain-adaptation"><a href="#论文阅读：Label-Disentangled-Analysis-for-unsupervised-visual-domain-adaptation" class="headerlink" title="论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation"></a>论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation</h1><p>这篇文章是计算机视觉和迁移学习交叉的领域自适应算法研究，来自重庆大学张磊教授团队。文章提出的标签解绑思想非常新颖，认为迁移学习的无监督问题，源域数据本身不仅包含自身的数据信息，也包含标签信息，以“分治”的思想，将标签信息的迁移也考虑进来，把数据中包含的标签信息和数据信息“解绑”，“拆分”成两个小问题，分而治之，分开进行领域自适应的特征对齐，最终再进行交叉绑定，实现数据恢复。文章最后采用了五个图像数据集进行了验证，并对参数、标签擦除效果进行了单独实验论证，得出结论认为其对提升领域自适应算法的效果有较好的提升。</p>
+<blockquote>
+<p>N. Xiao, L. Zhang, X. Xu, T. Guo, and H. Ma, “Label Disentangled Analysis for unsupervised visual domain adaptation,” <em>Knowl.-Based Syst.</em>, vol. 229, p. 107309, Oct. 2021, doi: 10.1016/j.knosys.2021.107309.</p>
 </blockquote>
-<p><img src="/World%EF%BC%81/Co\飞行器\照片\二号-卷轴-航拍-云台-FPV.jpg" alt="二号-卷轴-航拍-云台-FPV"><img src="/World%EF%BC%81/Co\飞行器\照片\IMG_1528.JPG" alt="IMG_1528"></p>
-<p><img src="/World%EF%BC%81/Co\飞行器\照片\IMG_1537.JPG" alt="IMG_1537"></p>
-<p><img src="/World%EF%BC%81/Co\飞行器\照片\IMG_1571.JPG" alt="IMG_1571"></p>
-<p><img src="/World%EF%BC%81/Co\飞行器\照片\IMG_1562.JPG" alt="IMG_1562"></p>
+<h2 id="一、论文主要解决的问题"><a href="#一、论文主要解决的问题" class="headerlink" title="一、论文主要解决的问题"></a>一、论文主要解决的问题</h2><p>在迁移学习的领域自适应问题中，我们常常考虑源域数据集作为知识迁移的源头，而目标域数据集作为知识迁移的“受体”，这两个数据域的数据分布往往有比较大的不同。</p>
+<p>一般来说，源域数据通常是有标签的，而目标域的数据没有标签，这也就意味着，<strong>源域数据中不仅仅存在着数据本身的信息，还存在有关标签的信息</strong>。已有的<strong>无监督领域自适应算法（Unsupervised Domain Adaptation, UDA）</strong>通常通过源域中大量“语义相邻”却分布不同的的有标签数据来训练模型，进而进行分类，但这些模型都忽略了一个非常重要的问题：<strong>有标签主导的数据很容易使模型倾向于<em>“记住”</em>数据，而不是学习基本的图像特征，</strong>这会使得域自适应的迁移“make no sense”。</p>
+<p>文章认为，<strong>数据的特征分布是动态的，而标签的数据分布是静态的，二者具有很强的相关性</strong>，<strong>标签与特征密切相关会在一定程度上降低特征的可迁移能力，从而导致分布的对齐不充分</strong>，这对解决迁移学习中的无监督自适应问题产生了一定的阻碍。<span id="more"></span></p>
+<h2 id="二、论文提出的方法"><a href="#二、论文提出的方法" class="headerlink" title="二、论文提出的方法"></a>二、论文提出的方法</h2><p>论文提出了一种名为<strong>标签解绑分析（Label Disentangled Analysis, LDA）</strong>的框架，核心要义是解绑/抹除数据特征中的标签信息。框架的实现目标是找到一组比较好的投影方向，使得两个域的新数据在共域子空间中能够尽可能相近、相似（bias尽可能低），同时还具有较强的判别性（参考子空间学习方法）。</p>
+<p><img src="/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/image-20210803162152488.png" alt="image-20210803162152488"></p>
+<p>整个框架分为三个模块：<strong>标签解绑（Disentagling）(I)</strong>；<strong>域间无标签图像特征、标签重构特征对齐（alignment）（II）</strong>；<strong>对齐图像与标签重构特征交叉关联（cross coupling）（III）</strong>。接下来我将按照模块逐个进行讲解。</p>
+<h3 id="1-标签解绑（Disentangling）"><a href="#1-标签解绑（Disentangling）" class="headerlink" title="1. 标签解绑（Disentangling）"></a>1. 标签解绑（Disentangling）</h3><p>既然数据中的标签信息会影响模型的训练，那何不将标签信息从这些数据中剥离出来，再进行训练？标签解绑这一部分正是为了剥离信息而生，是整个框架的核心部分。这一部分对应了分治的“分”的过程，将隐含的标签信息和数据信息拆分开。</p>
+<p>关键思想是<strong>从图像特征中擦除隐含的标签信息（语义）</strong>，因为直接提取的图像特征包含标签信息，标签信息（语义）将使模型能够记住数据，而不是学习基本的图像特征，不利于领域自适应。</p>
+<p><img src="/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/image-20210803163133177.png" alt="image-20210803163133177"></p>
+<p>这一模块采用了<strong>双向投影算法（bi-directional mapping）</strong>，所谓的两个方向就是<strong>由特征到标签$g(x)$</strong>，和<strong>由标签到特征$h(y)$</strong>。</p>
+<p>这么说确实不好理解，但如果直接一些就明晰了很多：$g(x)$得到的是数据解绑后得到的<strong>无标签数据特征</strong>，而$h(y)$得到的是数据解绑后<strong>重构得到的标签特征</strong>。这两组特征（$g(X_T)和g(X_S)$，$h(X_T)和h(X_S)$）分组进入领域自适应的特征对齐步骤。</p>
+<p>但目标域数据并没有标签，该如何解决？文章考虑用一个分类器$f$，将得到的目标域无标签数据特征放到分类器里分类，得到伪标签$\hat{Y_t}$，再利用双向投影算法，得到对应标签重构特征。但这样得到的伪标签肯定是不准确的，文章后续采用了目标域重构标签特征分布和源域无标签数据特征分布交叉关联的方法进行校正，会在后面讲解。</p>
+<p>那么回到数据解绑的问题上，具体的实现步骤是怎样的？文章考虑让两个域在投影后各自的标签和数据之间的相关性最小，改写成优化问题为：</p>
+<script type="math/tex; mode=display">
+
+\begin{align}
+\min_{{P_x,P_y}} \ell_{DIS}({P_x,P_y})=&CORR(\frac{1}{n_s}\sum_{i=1}^{n_s}{P_y^Ty_i^s},\frac{1}{n_s}\sum_{i=1}^{n_s}{P_x^Tx_i^s})
+\\&+CORR(\frac{1}{n_t}\sum_{j=n_s+1}^{n_s+n_t}{P_y^T\hat{y_i^t}},\frac{1}{n_t}\sum_{j=n_s+1}^{n_s+n_t}{P_x^Tx_i^t})
+\end{align}\tag{1}
+</script><p>其中$CORR(\frac{}{})$为向量内积运算，$P_y$为重构标签数据空间的投影方向，$P_x$为无标签数据空间的投影方向，$x_s/x_t$为源域/目标域数据，$y_s/y_t$为源域/目标域标签（one-hot形式）。</p>
+<p>这一优化目标$\ell_{DIS}$考虑用向量内积来表示两向量之间的相关性，内积越小，相关性越小。为了实现隐含的标签信息从数据中抹除的目的，自然的想法就是使源域和目标域各自对应的相关性尽可能小。</p>
+<h3 id="2-域间无标签图像特征、标签重构特征对齐（alignment）"><a href="#2-域间无标签图像特征、标签重构特征对齐（alignment）" class="headerlink" title="2. 域间无标签图像特征、标签重构特征对齐（alignment）"></a>2. 域间无标签图像特征、标签重构特征对齐（alignment）</h3><p>在通过标签解绑（disentangling）得到源域和目标域的无标签数据特征和重构标签特征后，接下来要进行特征对齐，也就是领域自适应算法的“传统艺能”，对两组特征进行“治”。对于特征对齐，文章采用了大名鼎鼎的最大均值差异（maximum mean discrepancy, MMD），分别在无标签数据特征空间和重构标签特征空间使用边缘MMD，实现特征对齐。</p>
+<p>数据特征自适应的优化目标如下：</p>
+<script type="math/tex; mode=display">
+\min_{P_X}\ell_{FEA}({P_X})=||\frac{1}{n_s}\sum_{i=1}^{n_s}{P_X^Tx_i^S}-\frac{1}{n_t}\sum_{j=n_s+1}^{n_s+n_t}{P_X^Tx_j^t}||^2
+\tag{2}</script><p>标签特征自适应的优化目标如下：</p>
+<script type="math/tex; mode=display">
+\min_{P_y}\ell_{LB}({P_X})=||\frac{1}{n_s}\sum_{i=1}^{n_s}{P_y^Ty_i^S}-\frac{1}{n_t}\sum_{j=n_s+1}^{n_s+n_t}{P_y^T\hat{y}_j^t}||^2
+\tag{3}</script><p>采用MMD之后的一种很自然的想法是防止数据聚集，保证数据的离散性和可分性。文章采用了类似于PCA推导的协方差矩阵最大化，将数据能量最大化，保证投影后的数据仍然足够分散。</p>
+<script type="math/tex; mode=display">
+\max_{P}\mathcal{F}_{PCA}({P})=tr({P^TZHZ^TP})\tag{4}</script><p>其中，${Z}=Concat[X;Y]$, 是X和Y两个矩阵上下拼接起来的，$P=[P_X^T P_Y^T]$，中心化矩阵$H=I_n-\frac{1}{n}{11^T}$, ${1}$为全1列向量。</p>
+<h3 id="3-对齐图像与标签重构特征交叉关联（cross-coupling）"><a href="#3-对齐图像与标签重构特征交叉关联（cross-coupling）" class="headerlink" title="3. 对齐图像与标签重构特征交叉关联（cross coupling）"></a>3. 对齐图像与标签重构特征交叉关联（cross coupling）</h3><p>由于两个域的特征和标签信息在第一步已经解绑，对数据的判别性有较大的影响。因此，为了寻找更好的共域特征，提升数据判别性，在新的共域子空间当中，标签和数据特征应当再次进行关联。这一步也是在进行数据恢复（restore），保证新的子空间内的判别信息不失真。</p>
+<p>既然是标签信息和数据信息重新嵌套，就可以考虑逆标签解绑而行，增大相关性。但不是增大两个域各自的标签和特征相关性，而是是增大源域数据和目标域的标签、源域标签和目标域数据的相关性。具体公式如下：</p>
+<script type="math/tex; mode=display">
+
+\begin{align}
+\max_{{P_x,P_y}} \ell_{COUP}({P_x,P_y})=&CORR(\frac{1}{n_s}\sum_{i=1}^{n_s}{P_y^Ty_i^s},\frac{1}{n_s}\sum_{i=1}^{n_s}{P_x^Tx_i^s})
+\\&+CORR(\frac{1}{n_t}\sum_{j=n_s+1}^{n_s+n_t}{P_y^T\hat{y_j^t}},\frac{1}{n_t}\sum_{j=n_s+1}^{n_s+n_t}{P_x^Tx_j^t})
+\end{align}\tag{5}
+</script><p>源域和目标域的数据特征和标签特征交叉绑定，可以理解为是为了增强共域特征的相关性，同时移除单独域的特征，保证共域特征的判别性，提升分类器的效果。</p>
+<h3 id="4-模型总成及优化"><a href="#4-模型总成及优化" class="headerlink" title="4. 模型总成及优化"></a>4. 模型总成及优化</h3><p>公式1-5均为求共域子空间投影方向所需解决的优化问题，需要将这些问题转化为组合优化问题。因此，将四个优化目标组合起来（暂时抛开$\mathcal{F_{PCA}}$以简化计算,后面进一步优化会拿进来），并乘以系数，往最小二乘的计算模型上凑，最终的优化目标可以改写为：</p>
+<script type="math/tex; mode=display">
+
+\begin{align}
+\min_{{P_x,P_y}}\ell_{LDA}&=\ell_{DIS}({P_x,P_y})
++\ell_{FEA}({P_x})+\ell_{LB}({P_y})
+-\mathcal{F}_{COUP}({P_x,P_y})-\mathcal{F}_{PCA}({P})
+\\simplify&\rightarrow2\ell_{DIS}({P_x,P_y})
++\ell_{FEA}({P_x})+\ell_{LB}({P_y})
+-2\mathcal{F}_{COUP}({P_x,P_y})
+\\&=||{x^*_s-x^*_t}||^2+||{y_s^*-y_t^*}||^2+2CORR({y_s^*-t_t^*,x_s^*-x_t^*})
+\\&=||({x_s^*+y_s^*})-({x_t^*-y_t^*}))||^2
+\\&=tr({P^T}Concat[{X;Y}]{A_0}Concat[{X;Y}]^T{P})
+\end{align}\tag{6}
+</script><p>其中${P^T=[P_x^T,P_y^T]}$, ${x_s^<em>}=\frac{1}{n_s}\sum_{i=1}^{n_s}{P_x^Tx_i^s}$,  $x_t^</em>,y_s^<em>,y_t^</em>$以此类推。$A_0$为边缘分布下的自适应矩阵，表达式如下：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+\begin{split}
+(A_{0})_{ij}= \left \{
+\begin{array}{lr}
+    \frac{1}{n_sn_S},                    & Concat[{x_i;y_i}],Concat[{x_j;y_j}]\in\mathcal{D_s}\\
+    \frac{1}{n_sn_t},        & Concat[{x_i;y_i}],Concat[{x_j;y_j}]\in\mathcal{D_t}\\
+    \frac{-1}{n_sn_t},                                 & otherwise
+\end{array}
+\right.
+\end{split}
+\end{align*}\tag{7}</script><p>这里的改写和优化应用到了一些推导技巧和变换方法，用到了两次Kernal Trick，和MDD的矩阵形式推导类似，追根溯源的话可以参考TCA和JDA的推导方法。</p>
+<p>文章认为，目前的自适应矩阵仅能够得到数据特征和标签特征的边缘分布，要建立数据特征和标签特征的联合分布，则需要引入联合MMD距离（参考JDA），并计算对应的投影方向${P}$。引入后改写公式（6）得到：</p>
+<script type="math/tex; mode=display">
+
+\min_{{P_x,P_y}}\ell_{LDA}=tr({P^T}Concat[{X;Y}]{A}Concat[{X;Y}]^T{P})\tag{8}
+</script><p>其中$A$被改写如下：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+\begin{split}
+({A_c})_{ij}= \left \{
+\begin{array}{lr}
+    \frac{1}{n_s^{(c)}n_S^{(c)}},                    & Concat[{x_i;y_i}],Concat[{x_j;y_j}]\in\mathcal{D_s}\\
+    \frac{1}{n_s^{(c)}n_t^{(c)}},        & Concat[{x_i;y_i}],Concat[{x_j;y_j}]\in\mathcal{D_t}\\
+    \frac{-1}{n_s^{(c)}n_t^{(c)}},                                 
+    & \begin{split}\left \{ \begin{array}{lr}
+    Concat[{x_i;y_i}]\in\mathcal{D_s},Concat[{x_j;\hat{y}_j}]\in\mathcal{D_t}\\
+    Concat[{x_i;y_i}]\in\mathcal{D_s},Concat[{x_j;\hat{y}_j}]\in\mathcal{D_t}
+    \end{array}
+    \right.
+    \end{split}
+    \\
+    0, &otherwise
+\end{array}
+\right.
+\end{split}
+\end{align*}\tag{9}</script><p>到此为止，对于三个模块的组合优化问题已经由公式（8）定义完成，后续的一些工作也是在画龙点睛，比如添加正则化项$||{P}||_F^2$以压缩解集空间，优化${P}$的求解；添加权重系数$\mu$以平衡数据${X}$和标签${Y}$。最终的优化目标如下：</p>
+<script type="math/tex; mode=display">
+\min_Ptr({P^T}Concat[{X;Y}]{A}Concat[{X;Y}]^T{P})+\lambda||{P}||_F^2
+\\s.t. {P^T}Concat[{X;\mu Y}]{H}Concat[{X;\mu Y}]^T{P}={I}\tag{10}</script><p>约束条件来源于$\mathcal{F}_{PCA}$,如果不写成约束，可以将优化目标写成分式，但这样修改，优化目标就变成了无约束优化问题，而且组成的分式是非凸的，求解难度为NP Hard。解决方法就是固定分母（$\mathcal{F}_{PCA}={I}$）作为约束，直接用拉格朗日乘数法求解，这样难度就降低了很多。</p>
+<p>利用拉格朗日乘数法求解后可得最终优化目标：</p>
+<script type="math/tex; mode=display">
+((Concat[{X};\mu{Y}]{A}(Concat[{X};\mu{Y}])^T+\lambda{I}){P}=((Concat[{X};\mu{Y}]{H}(Concat[{X};\mu{Y}])^T+\lambda{I}){P}\Phi</script><script type="math/tex; mode=display">
+\rightarrow((Concat[{X};\mu{Y}]{H}(Concat[{X};\mu{Y}])^T+\lambda{I})^{-1}((Concat[{X};\mu{Y}]{A}(Concat[{X};\mu{Y}])^T+\lambda{I}){P}={P}\Phi</script><p>其中$\Phi=diag(\phi_1,\phi_2,…,\phi_k)$为拉格朗日乘子。求解P也很容易，直接求解左边一大串公式的特征向量组，找到$k$个特征值最小的特征向量，组成对应的投影方向$P$。($k$为要降维得到的维数)</p>
+<p>文章最后采用了五个计算机视觉数据集，找了10个方法作为baseline，进行了效果验证，效果SOTA，具体实验方法就不再细说。</p>
 
       
 
@@ -257,7 +349,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/World%EF%BC%81/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -269,6 +361,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">大二做的物流小车</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -290,7 +392,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA"><span class="toc-number">1.</span> <span class="toc-text">大一团伙自制DIY四旋翼无人机</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel-Disentangled-Analysis-for-unsupervised-visual-domain-adaptation"><span class="toc-number">1.</span> <span class="toc-text">论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%AE%BA%E6%96%87%E4%B8%BB%E8%A6%81%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">一、论文主要解决的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%AE%BA%E6%96%87%E6%8F%90%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">二、论文提出的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A0%87%E7%AD%BE%E8%A7%A3%E7%BB%91%EF%BC%88Disentangling%EF%BC%89"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 标签解绑（Disentangling）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%9F%9F%E9%97%B4%E6%97%A0%E6%A0%87%E7%AD%BE%E5%9B%BE%E5%83%8F%E7%89%B9%E5%BE%81%E3%80%81%E6%A0%87%E7%AD%BE%E9%87%8D%E6%9E%84%E7%89%B9%E5%BE%81%E5%AF%B9%E9%BD%90%EF%BC%88alignment%EF%BC%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 域间无标签图像特征、标签重构特征对齐（alignment）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AF%B9%E9%BD%90%E5%9B%BE%E5%83%8F%E4%B8%8E%E6%A0%87%E7%AD%BE%E9%87%8D%E6%9E%84%E7%89%B9%E5%BE%81%E4%BA%A4%E5%8F%89%E5%85%B3%E8%81%94%EF%BC%88cross-coupling%EF%BC%89"><span class="toc-number">1.2.3.</span> <span class="toc-text">3. 对齐图像与标签重构特征交叉关联（cross coupling）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%A8%A1%E5%9E%8B%E6%80%BB%E6%88%90%E5%8F%8A%E4%BC%98%E5%8C%96"><span class="toc-number">1.2.4.</span> <span class="toc-text">4. 模型总成及优化</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -369,7 +471,7 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

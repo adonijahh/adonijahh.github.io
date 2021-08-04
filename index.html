@@ -30,6 +30,8 @@
   </style>
   
 
+
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
   
 
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -154,6 +156,78 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/">论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation</a>
+    </h1>
+  
+
+        
+         
+<a href="/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/" class="archive-article-date">
+  	<time datetime="2021-08-04T12:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="论文阅读：Label-Disentangled-Analysis-for-unsupervised-visual-domain-adaptation"><a href="#论文阅读：Label-Disentangled-Analysis-for-unsupervised-visual-domain-adaptation" class="headerlink" title="论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation"></a>论文阅读：Label Disentangled Analysis for unsupervised visual domain adaptation</h1><p>这篇文章是计算机视觉和迁移学习交叉的领域自适应算法研究，来自重庆大学张磊教授团队。文章提出的标签解绑思想非常新颖，认为迁移学习的无监督问题，源域数据本身不仅包含自身的数据信息，也包含标签信息，以“分治”的思想，将标签信息的迁移也考虑进来，把数据中包含的标签信息和数据信息“解绑”，“拆分”成两个小问题，分而治之，分开进行领域自适应的特征对齐，最终再进行交叉绑定，实现数据恢复。文章最后采用了五个图像数据集进行了验证，并对参数、标签擦除效果进行了单独实验论证，得出结论认为其对提升领域自适应算法的效果有较好的提升。</p>
+<blockquote>
+<p>N. Xiao, L. Zhang, X. Xu, T. Guo, and H. Ma, “Label Disentangled Analysis for unsupervised visual domain adaptation,” <em>Knowl.-Based Syst.</em>, vol. 229, p. 107309, Oct. 2021, doi: 10.1016/j.knosys.2021.107309.</p>
+</blockquote>
+<h2 id="一、论文主要解决的问题"><a href="#一、论文主要解决的问题" class="headerlink" title="一、论文主要解决的问题"></a>一、论文主要解决的问题</h2><p>在迁移学习的领域自适应问题中，我们常常考虑源域数据集作为知识迁移的源头，而目标域数据集作为知识迁移的“受体”，这两个数据域的数据分布往往有比较大的不同。</p>
+<p>一般来说，源域数据通常是有标签的，而目标域的数据没有标签，这也就意味着，<strong>源域数据中不仅仅存在着数据本身的信息，还存在有关标签的信息</strong>。已有的<strong>无监督领域自适应算法（Unsupervised Domain Adaptation, UDA）</strong>通常通过源域中大量“语义相邻”却分布不同的的有标签数据来训练模型，进而进行分类，但这些模型都忽略了一个非常重要的问题：<strong>有标签主导的数据很容易使模型倾向于<em>“记住”</em>数据，而不是学习基本的图像特征，</strong>这会使得域自适应的迁移“make no sense”。</p>
+<p>文章认为，<strong>数据的特征分布是动态的，而标签的数据分布是静态的，二者具有很强的相关性</strong>，<strong>标签与特征密切相关会在一定程度上降低特征的可迁移能力，从而导致分布的对齐不充分</strong>，这对解决迁移学习中的无监督自适应问题产生了一定的阻碍。</p>
+        
+          <a class="article-more-a" href="/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/08/04/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%EF%BC%9ALabel%20Disentangled%20Analysis%20for%20unsupervised%20visual%20domain%20adaptation/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-大二做的物流小车" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -179,8 +253,10 @@
 <p>大二暑假，导师让我们去打他跟企业合作的一个比赛，内容是做物流物块搬运和路径规划，厂家给提供了机械臂和小车（虽然说极其难用），从19年5月一直干到8月初，写程序，动手改车改机械臂，算法从PID换成开环，各种大操大办，最后辗转贵州河北，拿了省赛一等奖和全国季军。</p>
 <p>当时自己负责的是车，机械臂基本不懂，上传点有关小车和比赛当天的内容，纪念一下~</p>
 </blockquote>
-<p><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/1.png" alt="1"><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/2.png" alt="2"><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/3.png" alt="3"><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/4.png" alt="4"><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/5.png" alt="5"><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/6.png" alt="6"><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/7.png" alt="7"><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/8.png" alt="8"><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/9.png" alt="9"></p>
-
+<p><img src="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/1.png" alt="1"></p>
+        
+          <a class="article-more-a" href="/2021/07/31/%E5%A4%A7%E4%BA%8C%E5%81%9A%E7%9A%84%E7%89%A9%E6%B5%81%E5%B0%8F%E8%BD%A6/#more">more >></a>
+        
       
 
       
@@ -248,11 +324,10 @@
 <p>大一下学期跟前任导师团队合伙做的一个四旋翼无人机，做成以后拿去比赛也没获奖，导师搬楼的时候直接送给我了，然而自那以后再也没动过这台机子，放在宿舍柜子顶上积灰，毕业最终也搞忘带走，丢掉了。= =</p>
 <p>当年的材料文件还在电脑里存着，有想学习的朋友可以私聊我微信啥的发给大家。</p>
 </blockquote>
-<p><img src="/2021/07/31/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA/二号-卷轴-航拍-云台-FPV.jpg" alt="二号-卷轴-航拍-云台-FPV"><img src="/2021/07/31/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA/IMG_1528.JPG" alt="IMG_1528"></p>
-<p><img src="/2021/07/31/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA/IMG_1537.JPG" alt="IMG_1537"></p>
-<p><img src="/2021/07/31/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA/IMG_1571.JPG" alt="IMG_1571"></p>
-<p><img src="/2021/07/31/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA/IMG_1562.JPG" alt="IMG_1562"></p>
-
+<p><img src="/2021/07/31/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA/二号-卷轴-航拍-云台-FPV.jpg" alt="二号-卷轴-航拍-云台-FPV"></p>
+        
+          <a class="article-more-a" href="/2021/07/31/%E5%A4%A7%E4%B8%80%E5%9B%A2%E4%BC%99%E8%87%AA%E5%88%B6DIY%E5%9B%9B%E6%97%8B%E7%BF%BC%E6%97%A0%E4%BA%BA%E6%9C%BA/#more">more >></a>
+        
       
 
       
