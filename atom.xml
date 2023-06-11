@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-06-11T14:03:49.754Z</updated>
+  <updated>2023-06-11T14:34:41.123Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>publication</title>
+    <link href="http://example.com/2023/06/11/publication/"/>
+    <id>http://example.com/2023/06/11/publication/</id>
+    <published>2023-06-11T14:30:36.000Z</published>
+    <updated>2023-06-11T14:34:41.123Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h1><ol><li><strong>Y. Tian</strong> et al., “Local Manifold Embedding Cross-Domain Subspace Learning for Drift Compensation of Electronic Nose Data,” <em>IEEE Trans. Instrum. Meas.</em>, vol. 70, pp. 1–12, 2021, doi: 10.1109&#x2F;TIM.2021.3108529.</li><li>   <strong>Y. Tian</strong> et al., “A Drift-Compensating Novel Deep Belief Classification Network to Improve Gas Recognition of Electronic Noses,” <em>IEEE Access</em>, vol. 8, pp. 121385–121397, 2020, doi: 10.1109&#x2F;ACCESS.2020.3006729.</li><li>   <strong>Y. Tian</strong> et al., “Adaptive Gradient Projection Correction Method for Resistivity Array Imaging Logging,” <em>Remote Sensing</em>, Under Review.</li><li><strong>Y. Tian</strong> et al., “Deep-Learning-Driving Efficient Sparse Target Imaging Method for Array Borehole Radar in Nonuniform Medium,” <em>IEEE Transactions on Geoscience and Remote Sensing</em>, Under Review.</li><li><strong>Y. Tian</strong> et al., “A Nonlinear Manifold Embedding Extreme Learning Machine to Improve Gas Recognition of Electronic Nose,” <em>IEEE Sensors Journal</em>, Under Review.</li><li>   <strong>Y. Tian</strong> et al. “A Deep-Learning-Based Borehole Radar Sparse Target Imaging Method with High Accuracy in Nonuniform Medium,” in <em>2023 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S&#x2F;URSI)</em>. (Accepted)</li><li>   <strong>田雨桐</strong>等， “基于自适应梯度投影的阵列成像错位校正方法,” <em>2023年全国微波毫米波会议</em> （已接收）</li><li>   R. Yi, J. Yan, D. Shi, <strong>Y. Tian</strong> et al., “Improving the Performance of Drifted&#x2F;Shifted Electronic Nose Systems by Cross-Domain Transfer using Common Transfer Samples,” <em>Sens. Actuators B Chem</em>., vol. 329, no. 11, p. 129162, 2020.</li><li>   Y. Zhang, J. Yan, Z. Wang, Z. Wang, <strong>Y. Tian</strong> et al., “TDACNN: Target-domain-free domain adaptation convolutional neural network for drift compensation in gas sensors,” <em>Sens. Actuators B Chem</em>, vol. 361, p. 131739, Jun. 2022, doi: 10.1016&#x2F;j.snb.2022.131739.</li><li>   闫嘉，<strong>田雨桐</strong>等，“一种基于流形学习的跨域子空间学习电子鼻漂移补偿方法”，发明专利 CN 202110923440.4，2021年08月12日</li><li>   <strong>田雨桐</strong>等，“回收用油检测装置”，，实用新型专利 CN 201922490640.6，2019年12月31日</li><li>   李廷军，<strong>田雨桐</strong>等，“一种基于自适应梯度投影的电阻率成像错位校正方法”，发明专利 CN 202210464197.9，2022年04月29日</li><li>   李廷军，<strong>田雨桐</strong>等“一种多基站间基于定位信号转发的位置解算方法”，发明专利 CN 202211088929.5，2022年09月07日</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Publications&quot;&gt;&lt;a href=&quot;#Publications&quot; class=&quot;headerlink&quot; title=&quot;Publications&quot;&gt;&lt;/a&gt;Publications&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Y. Tian&lt;/strong&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>any title</title>
