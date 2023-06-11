@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-06-11T12:39:07.524Z</updated>
+  <updated>2023-06-11T13:42:33.524Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,15 +21,18 @@
     <link href="http://example.com/2023/06/11/any-title/"/>
     <id>http://example.com/2023/06/11/any-title/</id>
     <published>2023-06-11T12:37:45.000Z</published>
-    <updated>2023-06-11T12:39:07.524Z</updated>
+    <updated>2023-06-11T13:42:33.524Z</updated>
     
-    <content type="html"><![CDATA[<p>hello hello Tian!</p>]]></content>
+    <content type="html"><![CDATA[<ol><li>Education Background</li></ol><ul><li><p>Doctoral student, Electronic science and technology (Circuit and System), University of Electronic Science and Techonology of China, Chenngdu, China, 2023-Now    Supervisor: Prof. Yong Li</p></li><li><p>Masteral student, Electronic science and technology (Circuit and System), University of Electronic Science and Techonology of China, Chenngdu, China, 2021-2023   Supervisor: Associate Prof. Tingjun Li</p></li><li><p>Bychelor, Electronic information engineering, Southwest University, Chongqing, China, 2017-2021   Supervisor: Associate Prof. Jia. Yan</p></li></ul><ol start="2"><li>Research Interests</li></ol><p>wireless radio navigation and radar-related baseband signal processing, high speed maglev and railway communication, electronic nose system, machine learning, pattern recognization and optimization theory. Now he is focusing on the localization and commnication of the maglev vehicle-ground.</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;hello hello Tian!&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;Education Background&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Doctoral student, Electronic science and technology (Circuit and System), University of</summary>
       
     
     
