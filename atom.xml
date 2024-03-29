@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-26T08:02:04.718Z</updated>
+  <updated>2024-03-29T13:27:01.154Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,80 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>publication</title>
-    <link href="http://example.com/2024/02/03/publication/"/>
-    <id>http://example.com/2024/02/03/publication/</id>
-    <published>2024-02-03T03:18:36.000Z</published>
-    <updated>2024-02-26T08:02:04.718Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h1><h3 id="Journal-amp-Conference"><a href="#Journal-amp-Conference" class="headerlink" title="Journal &amp; Conference"></a>Journal &amp; Conference</h3><ol><li><strong>Y. Tian</strong> et al., “Efficient Deep-Learning-Driven Sparse-Target Imaging Method for Array Borehole Radar in Nonuniform Medium,” in <em>IEEE Transactions on Geoscience and Remote Sensing</em>, vol. 62, pp. 1-14, 2024, Art no. 2000914, doi: 10.1109&#x2F;TGRS.2023.3346464. <strong>(中科院1区Top，IF 8.2)</strong></li><li><strong>Y. Tian</strong> et al., “Local Manifold Embedding Cross-Domain Subspace Learning for Drift Compensation of Electronic Nose Data,” <em>IEEE Trans. Instrum. Meas.</em>, vol. 70, pp. 1–12, 2021, doi: 10.1109&#x2F;TIM.2021.3108529. <strong>（中科院2区Top，IF 5.6）</strong></li><li><strong>Y. Tian</strong> et al., “Matrix-Pencil-Based Waterflow Velocity Detection Method by 24 GHz Millimetre-Wave Radar”, <em>IEEE Antennas and Wireless Propagation Letters</em>, Accepted, 2024. <strong>（中科院2区Top，IF 5.2）</strong></li><li><strong>Y. Tian</strong> et al., “Adaptive Gradient Projection Correction Method for Resistivity Array Imaging Logging,” <em>IEEE Sensors Journal</em>, Accepted, 2024. <strong>（中科院2区Top，IF 4.3）</strong></li><li><strong>Y. Tian</strong> et al., “A Nonlinear Manifold Embedding Extreme Learning Machine to Improve Gas Recognition of Electronic Nose,” <em>IEEE Sensors Journal</em>, Accepted, 2024. <strong>（中科院2区Top，IF 4.3）</strong></li><li><strong>Y. Tian</strong> et al., “A Drift-Compensating Novel Deep Belief Classification Network to Improve Gas Recognition of Electronic Noses,” <em>IEEE Access</em>, vol. 8, pp. 121385–121397, 2020, doi: 10.1109&#x2F;ACCESS.2020.3006729. <strong>（中科院3区，IF 3.9）</strong></li><li><strong>Y. Tian</strong> et al., “A Deep-Learning-Based Borehole Radar Sparse Target Imaging Method with High Accuracy in Nonuniform Medium,” <em>2023 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (USNC-URSI)</em>, Portland, OR, USA, 2023, pp. 1809-1810, doi: 10.1109&#x2F;USNC-URSI52151.2023.10238140. <strong>（CCF B类会议）</strong></li><li><strong>田雨桐</strong>等， “基于自适应梯度投影的阵列成像错位校正方法,” <em>2023年全国微波毫米波会议</em> ，2023 ，青岛</li><li><strong>田雨桐</strong>等，”基于启发式优化的毫米波雷达水流测速方法”，<em>2023年电路与系统年会</em>，2023，北京</li><li><strong>田雨桐</strong>等，“基于集成主副瓣功率比的低副瓣波束成形方法”，<em>2023年全国天线年会</em>，2023，哈尔滨</li><li><strong>田雨桐</strong>等，“基于低秩稀疏表示模型的电阻率成像去噪”，<em>2023年全国天线年会</em>，2023，哈尔滨</li><li>R. Yi, J. Yan, D. Shi, <strong>Y. Tian</strong> et al., “Improving the Performance of Drifted&#x2F;Shifted Electronic Nose Systems by Cross-Domain Transfer using Common Transfer Samples,” <em>Sens. Actuators B Chem</em>., vol. 329, no. 11, p. 129162, 2020. <strong>(中科院1区Top，IF 8.4)</strong></li><li>Y. Zhang, J. Yan, Z. Wang, Z. Wang, <strong>Y. Tian</strong> et al., “TDACNN: Target-domain-free domain adaptation convolutional neural network for drift compensation in gas sensors,” <em>Sens. Actuators B Chem</em>, vol. 361, p. 131739, Jun. 2022, doi: 10.1016&#x2F;j.snb.2022.131739. <strong>(中科院1区Top，IF 8.4)</strong></li></ol><h3 id="Patent"><a href="#Patent" class="headerlink" title="Patent"></a>Patent</h3><ol><li>闫嘉，<strong>田雨桐</strong>等，“一种基于流形学习的跨域子空间学习电子鼻漂移补偿方法”，发明专利 CN 202110923440.4，2021年08月12日</li><li><strong>田雨桐</strong>等，“回收用油检测装置”，，实用新型专利 CN 201922490640.6，2019年12月31日</li><li>李廷军，<strong>田雨桐</strong>等，“一种基于自适应梯度投影的电阻率成像错位校正方法”，发明专利 CN 202210464197.9，2022年04月29日</li><li>   李廷军，<strong>田雨桐</strong>等“一种多基站间基于定位信号转发的位置解算方法”，发明专利 CN 202211088929.5，2022年09月07日</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Publications&quot;&gt;&lt;a href=&quot;#Publications&quot; class=&quot;headerlink&quot; title=&quot;Publications&quot;&gt;&lt;/a&gt;Publications&lt;/h1&gt;&lt;h3 id=&quot;Journal-amp-Conference&quot;&gt;&lt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>any title</title>
-    <link href="http://example.com/2023/06/11/any-title/"/>
-    <id>http://example.com/2023/06/11/any-title/</id>
+    <link href="http://example.com/2023/06/11/2023-06-11-any-title/"/>
+    <id>http://example.com/2023/06/11/2023-06-11-any-title/</id>
     <published>2023-06-11T12:37:45.000Z</published>
-    <updated>2024-03-28T12:23:17.504Z</updated>
+    <updated>2024-03-29T13:27:01.154Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h1><ul><li><strong>电子科技大学</strong><br>博士研究生, 电子科学与技术 (电路与系统), 2023年-至今<br>导师：黎湧 教授</li><li><strong>电子科技大学</strong>  </li><li>硕士研究生, 电子科学与技术 (电路与系统), 2021年-2023年<br>导师：李廷军 副教授</li><li><strong>西南大学</strong><br>工学学士, 电子信息工程, 2017年-2021年<br>导师：闫嘉 教授</li></ul><h1 id="研究方向"><a href="#研究方向" class="headerlink" title="研究方向"></a>研究方向</h1><ul><li>无线电导航、雷达、通信相关基带信号处理；</li><li>数字相控阵信号处理（方向图综合、波形设计）；</li><li>高速磁浮与铁路无线通信；</li><li>电子鼻系统及其信号处理；</li><li>机器学习与模式识别；</li><li>优化理论</li></ul><h1 id="技术技能"><a href="#技术技能" class="headerlink" title="技术技能"></a>技术技能</h1><ul><li>熟练使用MATLAB实现算法实现与数据处理；</li><li>熟练使用Verilog，基于Vivado平台进行FPGA开发；</li><li>熟练使用C&#x2F;C++进行单片机等微控制器开发（包括STM32, ESP32, Arduino等）</li><li>熟练使用Python进行机器学习模型开发；</li><li>熟练使用Altium Designer进行单板电路设计</li></ul><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><ul><li>E-mail: <a href="mailto:&#121;&#x74;&#x74;&#x69;&#x61;&#x6e;&#50;&#48;&#50;&#x31;&#x40;&#115;&#116;&#100;&#46;&#x75;&#x65;&#x73;&#x74;&#99;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#110;">&#121;&#x74;&#x74;&#x69;&#x61;&#x6e;&#50;&#48;&#50;&#x31;&#x40;&#115;&#116;&#100;&#46;&#x75;&#x65;&#x73;&#x74;&#99;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#110;</a></li></ul><h1 id="Education-Background"><a href="#Education-Background" class="headerlink" title="Education Background"></a>Education Background</h1><ul><li><p><strong>University of Electronic Science and Techonology of China</strong><br>  Doctor degree candidate, Electronic science and technology (Circuit and System), 2023-Now<br>  Supervisor: Prof. <em>Yong Li</em></p></li><li><p><strong>University of Electronic Science and Techonology of China</strong><br>  Master degree candidate, Electronic science and technology (Circuit and System), 2021-2023<br>  Supervisor: Associate Prof. <em>Tingjun Li</em></p></li><li><p><strong>Southwest University</strong><br>  Bychelor of engineering, Electronic information engeering, 2017-2021<br>  Supervisor: Associate Prof. <em>Jia Yan</em></p></li></ul><h1 id="Research-Interests"><a href="#Research-Interests" class="headerlink" title="Research Interests"></a>Research Interests</h1><ul><li>Wireless radio navigation and radar-related baseband signal processing, </li><li>Digital Phased Array Signal Processing, Pattern Synthesis, and Waveform Design,</li><li>High speed Maglev and railway wireless communication, </li><li>Electronic nose system, </li><li>Machine learning and Pattern recognization,</li><li>Optimization theory.</li></ul><h1 id="Techniques-amp-Skills"><a href="#Techniques-amp-Skills" class="headerlink" title="Techniques &amp; Skills"></a>Techniques &amp; Skills</h1><ul><li>MATLAB for Algorithm Simulation, statistic processing.</li><li>Verilog for FPGA Programming and Implementation in Vivado Platform</li><li>C&#x2F;C++ for Microprocessors Development (STM32, ESP32, Arduino, etc.)</li><li>Python for Machine Learning Models Implementations</li><li>Altium Designer for Circuit Design in System Level</li></ul><h1 id="Contact-me"><a href="#Contact-me" class="headerlink" title="Contact me"></a>Contact me</h1><ul><li>E-mail: <a href="mailto:&#x79;&#x74;&#116;&#105;&#x61;&#110;&#50;&#x30;&#x32;&#x31;&#64;&#115;&#x74;&#100;&#x2e;&#x75;&#x65;&#115;&#116;&#x63;&#x2e;&#x65;&#x64;&#117;&#46;&#x63;&#110;">&#x79;&#x74;&#116;&#105;&#x61;&#110;&#50;&#x30;&#x32;&#x31;&#64;&#115;&#x74;&#100;&#x2e;&#x75;&#x65;&#115;&#116;&#x63;&#x2e;&#x65;&#x64;&#117;&#46;&#x63;&#110;</a></li></ul><p><strong>Last updated on Mar 28, 2024.</strong></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;教育背景&quot;&gt;&lt;a href=&quot;#教育背景&quot; class=&quot;headerlink&quot; title=&quot;教育背景&quot;&gt;&lt;/a&gt;教育背景&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;电子科技大学&lt;/strong&gt;&lt;br&gt;博士研究生, 电子科学与技术 (电路与系统), 2023年</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>any title</title>
-    <link href="http://example.com/2023/06/11/pubs/"/>
-    <id>http://example.com/2023/06/11/pubs/</id>
-    <published>2023-06-11T12:37:45.000Z</published>
-    <updated>2023-06-11T12:58:06.581Z</updated>
-    
-    <content type="html"><![CDATA[<p>This is publications!</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="😊Welcome-friend-If-you-want-to-know-more-about-me-please-click-the-tag-above-for-more-details"><a href="#😊Welcome-friend-If-you-want-to-know-more-about-me-please-click-the-tag-above-for-more-details" class="headerlink" title="😊Welcome friend! If you want to know more about me, please click the tag above for more details!"></a>😊Welcome friend! If you want to know more about me, please click the tag above for more details!</h3><h1 id="Personal-News"><a href="#Personal-News" class="headerlink" title="Personal News!"></a>Personal News!</h1><h3 id="2024"><a href="#2024" class="headerlink" title="2024"></a>2024</h3><p>[2024&#x2F;03&#x2F;29]🎇Congratulations on the <strong>Acceptance</strong> of 2 conference articles in <strong><em>2024 IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (USNC-URSI)</em>, Florance, Italy</strong>!</p><p>[2024&#x2F;03&#x2F;27]🎇Congratulations on the win of the Academic Up-and-Coming Star Prize Scholarship of UESTC (2024), values <strong>RMB 3000</strong>!</p><p>[2024&#x2F;03&#x2F;25]:triangular_flag_on_post: An article named “Matrix-Pencil-Based Waterflow Velocity Detection Method by 24 GHz Millimetre-Wave Radar” has been <strong>revised and resubmitted</strong> to <strong><em>IEEE Antennas and Propagation Letters</em>.</strong></p><p>[2024&#x2F;03&#x2F;24]✈I have come back to Chengdu for normal work and life.</p><p>[2024&#x2F;03&#x2F;06]🎇Congratulations on the <strong>Acceptance</strong> of 1 article named “A Nonlinear Manifold Embedding Extreme Learning Machine to Improve Gas Recognition of Electronic Nose” in <em><strong>IEEE Sensors Journal</strong></em>!</p><p>[2024&#x2F;03&#x2F;01]🎇Congratulations on the <strong>Acceptance</strong> of 1 article named “Adaptive Gradient Projection Correction Method for Resistivity Array Imaging Logging” in <em><strong>IEEE Sensors Journal</strong></em>!</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;This is publications!&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2023/06/11/hello-world/"/>
-    <id>http://example.com/2023/06/11/hello-world/</id>
-    <published>2023-06-11T11:36:34.505Z</published>
-    <updated>2023-06-11T11:36:34.505Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h3 id=&quot;😊Welcome-friend-If-you-want-to-know-more-about-me-please-click-the-tag-above-for-more-details&quot;&gt;&lt;a href=&quot;#😊Welcome-friend-If-you-wa</summary>
       
     
     
